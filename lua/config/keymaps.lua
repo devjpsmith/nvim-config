@@ -1,0 +1,24 @@
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", {
+    desc = "Toggle file explorer",
+})
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+vim.keymap.set("n", "<leader>fg", function()
+    require("telescope").extensions.live_grep_args.live_grep_args()
+end, {
+    desc = "Live grep args",
+})
+-- vim.keymap.set('n', '<leader>fg', builtin.live_grep, {desc = 'Telescope live grep' })
+vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+
+vim.keymap.set("n", "<leader>fr", function()
+    require("telescope").extensions.live_grep_args.live_grep_args({
+        additional_args = function()
+            return {
+                "--glob",
+                "*.yml",
+            }
+        end,
+    })
+end)
