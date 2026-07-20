@@ -24,10 +24,11 @@ vim.keymap.set("n", "<leader>th", function()
                 actions.close(prompt_bufnr)
 
                 colors.set_theme(selection[1])
-                -- vim.cmd.colorscheme(selection[1])
-            end)
+            end
+        )
 
             return true
         end,
     }):find()
-end)
+    end
+)
