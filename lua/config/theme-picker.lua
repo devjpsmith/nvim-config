@@ -1,8 +1,4 @@
-local themes = {
-    'base46-aquarium',
-    'base46-ashes',
-    'base46-aylin',
-}
+local themes = vim.fn.getcompletion('', 'color')
 
 local pickers = require("telescope.pickers")
 local finders = require("telescope.finders")

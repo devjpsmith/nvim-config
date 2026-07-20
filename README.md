@@ -3,7 +3,7 @@
 - [x] Base46
 - [x] Theme Switcher
 - [x] Statusline
-- [ ] Tabufline
+- [x] Bufferline
 - [ ] Term
 - [ ] Dashboard
 - [ ] Colorify

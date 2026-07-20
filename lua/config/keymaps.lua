@@ -22,3 +22,5 @@ vim.keymap.set("n", "<leader>fr", function()
         end,
     })
 end)
+vim.keymap.set('n', '<Tab>', '<cmd>bnext<cr>', { desc = 'Next buffer' })
+vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<cr>', { desc = 'Previous buffer' })
