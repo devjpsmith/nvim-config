@@ -4,7 +4,7 @@
 - [x] Theme Switcher
 - [x] Statusline
 - [x] Bufferline
-- [ ] Term
+- [x] Term
 - [ ] Dashboard
 - [ ] Colorify
 - [ ] Lsp Signature

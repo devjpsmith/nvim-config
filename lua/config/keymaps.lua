@@ -24,3 +24,13 @@ vim.keymap.set("n", "<leader>fr", function()
 end)
 vim.keymap.set('n', '<Tab>', '<cmd>bnext<cr>', { desc = 'Next buffer' })
 vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<cr>', { desc = 'Previous buffer' })
+
+-- Exit terminal mode with a single Escape press
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = "Exit terminal mode" })
+vim.keymap.set('n', '`', '<cmd>:ToggleTerm size=20 dir=. direction=horizontal name=terminal<cr>', { desc = 'Toggle terminal' })
+
+-- Window navigation from terminal mode
+vim.keymap.set('t', '<C-h>', [[<C-\><C-n><C-w>h]], { desc = "Move left" })
+vim.keymap.set('t', '<C-j>', [[<C-\><C-n><C-w>j]], { desc = "Move down" })
+vim.keymap.set('t', '<C-k>', [[<C-\><C-n><C-w>k]], { desc = "Move up" })
+vim.keymap.set('t', '<C-l>', [[<C-\><C-n><C-w>l]], { desc = "Move right" })
