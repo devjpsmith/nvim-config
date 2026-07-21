@@ -5,9 +5,7 @@
 - [x] Statusline
 - [x] Bufferline
 - [x] Term
-- [ ] Dashboard
 - [ ] Colorify
-- [ ] Lsp Signature
 - [ ] Lsp Variable Renamer
 - [ ] Nvim-cmp styling
 - [ ] Automating Mason Installation

@@ -15,6 +15,4 @@ function colors.load_theme()
     end
 end
 
---load_theme()
-
 return colors
