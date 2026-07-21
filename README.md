@@ -8,6 +8,7 @@
 - [ ] Colorify
 - [ ] Lsp Variable Renamer
 - [ ] Nvim-cmp styling
-- [ ] Automating Mason Installation
 - [x] Telescope
 - [x] Nvim-tree
+- [x] Code Folding
+- [x] Multi Cursor
