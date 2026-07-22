@@ -5,9 +5,8 @@
 - [x] Statusline
 - [x] Bufferline
 - [x] Term
-- [ ] Colorify
+- [x] Highlight Colors
 - [ ] Lsp Variable Renamer
-- [ ] Nvim-cmp styling
 - [x] Telescope
 - [x] Nvim-tree
 - [x] Code Folding
