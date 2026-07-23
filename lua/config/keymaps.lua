@@ -27,3 +27,13 @@ vim.keymap.set({ 't', 'n' }, '<C-j>', [[<C-\><C-n><C-w>j]], { desc = "Move down"
 vim.keymap.set({ 't', 'n' }, '<C-k>', [[<C-\><C-n><C-w>k]], { desc = "Move up" })
 vim.keymap.set({ 't', 'n' }, '<C-l>', [[<C-\><C-n><C-w>l]], { desc = "Move right" })
 
+local dap = require("dap")
+
+vim.keymap.set("n", "<F5>", dap.continue)
+vim.keymap.set("n", "<F10>", dap.step_over)
+vim.keymap.set("n", "<F11>", dap.step_into)
+vim.keymap.set("n", "<F12>", dap.step_out)
+
+vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint)
+vim.keymap.set("n", "<leader>dr", dap.repl.open)
+

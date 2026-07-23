@@ -5,4 +5,5 @@ return {
     "jsonls",
     "yamlls",
     "vue_ls",
+    "emmet_language_server",
 }
