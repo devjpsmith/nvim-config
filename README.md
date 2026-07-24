@@ -11,27 +11,27 @@
 - [x] Nvim-tree
 - [x] Code Folding
 - [x] Multi Cursor
-- [ ] Debugger
+- [x] Debugger
 
 ### Auto-completion & LSP
 
 #### Mason
 
-installing LSPs
+installing LSPs, DAPs, Linters, and Formatters
  
 #### Nvim-autopairs
 
 auto-closing brackets, quotes, and HTML tags
 
-#### NVim-ts-autotag
+#### Nvim-ts-autotag
 
 auto-close and rename HTML, JSX, and XML tags
-> Requires Treesitter
+> requires Treesitter
 
 ### Themes
 
 #### Base46
-AvengeMedia/base46 branch
+avengeMedia/base46 branch
 
-Self-implemented theme switcher
-> Requires Telescope
+### Self-implemented theme switcher
+> requires Telescope

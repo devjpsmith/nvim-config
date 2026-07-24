@@ -6,11 +6,24 @@ require("mason-lspconfig").setup({
     ensure_installed = mason_servers
 })
 
+require('lsp.lua_ls')
+
+vim.diagnostic.config({
+    virtual_text = {
+        spacing = 2,
+        source = "if_many",
+    },
+    signs = true,
+    underline = true,
+    update_in_insert = true,
+    severity_sort = true,
+})
+
 for _, server in ipairs(servers) do
     local config = {
         capabilities = capabilities,
         on_attach = function(_, bufnr)
-            local opts = { buffer = bufnr }
+            -- local opts = { buffer = bufnr }
 
             require('lsp.keymaps')
         end,
