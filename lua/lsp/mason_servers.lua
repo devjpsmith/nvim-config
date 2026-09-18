@@ -11,5 +11,4 @@ return {
     'vtsls',
     "emmet_language_server",
     'eslint',
-    'rubocop',
 }
