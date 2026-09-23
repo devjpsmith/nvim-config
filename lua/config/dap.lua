@@ -36,4 +36,3 @@ dap.listeners.before.event_exited.dapui_config = function()
 end
 
 require('config.dap.javascript')
-require('config.dap.keymaps')

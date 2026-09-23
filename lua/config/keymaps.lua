@@ -1,3 +1,6 @@
+vim.cmd("command! CopyRelPath call setreg('+', expand('%'))")
+vim.keymap.set('n', '<leader>jj', ':CopyRelPath<CR>')
+
 local builtin = require('telescope.builtin')
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", {
@@ -34,6 +37,7 @@ vim.keymap.set({ 't', 'n' }, '<C-j>', [[<C-\><C-n><C-w>j]], { desc = "Move down"
 vim.keymap.set({ 't', 'n' }, '<C-k>', [[<C-\><C-n><C-w>k]], { desc = "Move up" })
 vim.keymap.set({ 't', 'n' }, '<C-l>', [[<C-\><C-n><C-w>l]], { desc = "Move right" })
 
+-- DAP
 local dap = require("dap")
 
 vim.keymap.set("n", "<F5>", function()
@@ -42,8 +46,14 @@ vim.keymap.set("n", "<F5>", function()
 end)
 vim.keymap.set("n", "<F10>", dap.step_over)
 vim.keymap.set("n", "<F11>", dap.step_into)
-vim.keymap.set("n", "<F12>", dap.step_out)
+vim.keymap.set("n", "<S-F11>", dap.step_out)
 
 vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint)
 vim.keymap.set("n", "<leader>dr", dap.repl.open)
+vim.keymap.set('n', '<leader>db', dap.toggle_breakpoint, { desc = 'Toggle breakpoint' })
+vim.keymap.set('n', '<leader>dc', dap.continue, { desc = 'Debug continue' })
+
+local dap_ui = require('dapui')
+
+vim.keymap.set('n', '<leader>dw', dap_ui.elements.watches.remove, { desc = 'Delete watch under cursor' })
 
