@@ -11,6 +11,9 @@ vim.o.fillchars = 'eob: ,fold: ,foldopen:,foldsep: ,foldinner: ,foldclose:
 
 require('ufo').setup({
     provider_selector = function(bufnr, filetype, buftype)
+        if filetype == "vue" then
+            return {"indent", "treesitter"}
+        end
         return {'treesitter', 'indent'}
     end
 })

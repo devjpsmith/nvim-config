@@ -3,6 +3,7 @@ local ui_layout = require('config.dap.ui-layout')
 local nvim_tree = require('nvim-tree.api')
 
 require("nvim-dap-virtual-text").setup()
+require("dap-ruby").setup()
 
 mason_dap.setup({
     automatic_installation = true,
