@@ -31,7 +31,7 @@ for _, language in ipairs(js_based_languages) do
 
             cwd = "${workspaceFolder}",
 
-            runtimeExecutable = "pnpm",
+            runtimeExecutable = "npm",
 
             runtimeArgs = {
                 "test",

@@ -6,8 +6,6 @@ local conf = require("telescope.config").values
 local actions = require("telescope.actions")
 local action_state = require("telescope.actions.state")
 local colors = require('config/colors')
-local actions = require("telescope.actions")
-local action_state = require("telescope.actions.state")
 
 vim.keymap.set("n", "<leader>th", function()
     local original_theme = vim.g.colors_name
@@ -55,8 +53,9 @@ vim.keymap.set("n", "<leader>th", function()
                 colors.set_theme(entry[1])
                 -- save theme here if desired
             end)
-        return true
-    end,
-}):find()
+
+            return true
+        end,
+    }):find()
     end
 )

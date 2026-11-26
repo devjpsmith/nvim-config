@@ -1,0 +1,3 @@
+module NewModule
+
+end

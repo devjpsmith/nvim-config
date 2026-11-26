@@ -2,6 +2,7 @@ require('config.options')
 require("config.lazy")
 require('lualine').setup()
 require('config.keymaps')
+require("config.snippets")
 
 require('bufferline').setup({
     options = {
